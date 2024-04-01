@@ -53,6 +53,6 @@ export const THEME_CONFIG: App.Locals['config'] = {
   category_map: [
     {name: "胡适", path: "hu-shi"},
   ],
-
+  sortOrder: "up"
 }
 

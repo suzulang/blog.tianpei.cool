@@ -34,6 +34,7 @@ declare namespace App {
         name: string;
         path: string;
       }>,
+      sortOrder: string;
     }
     translate: (key: string, param?: string | number) => string;
   }

@@ -1,7 +1,8 @@
 import { getCollection } from 'astro:content'
 import sanitizeHtml from 'sanitize-html'
 import MarkdownIt from 'markdown-it'
-
+import { THEME_CONFIG } from '~/theme.config'
+const sortOrder = THEME_CONFIG.sortOrder
 export async function getCategories() {
   const posts = await getPosts()
 
@@ -25,7 +26,11 @@ export async function getPosts() {
   posts.sort((a, b) => {
     const aDate = a.data.pubDate || new Date()
     const bDate = b.data.pubDate || new Date()
+    if (sortOrder === 'up') {
     return bDate.getTime() - aDate.getTime()
+    } else {
+      return aDate.getTime() - bDate.getTime()
+    }
   })
   return posts
 }
