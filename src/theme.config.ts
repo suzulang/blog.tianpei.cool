@@ -2,7 +2,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** blog title */
   title: "人生現役",
   /** your name */
-  author: "Typography",
+  author: "",
   /** website description */
   desc: "Rediscory the beauty of typography",
   /** your deployed domain */
@@ -28,7 +28,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   ],
   /** your header info */
   header: {
-    twitter: "@moeyua13",
+    twitter: "@tianpeicool",
   },
   /** your navigation links */
   navs: [
