@@ -2,7 +2,7 @@
 title: pinia使用指南
 pubDate: 2024-03-30
 categories: ['前端', 'Vue']
-description: ''
+description: 'pinia使用过程中，一步一步的学习记录'
 ---
 ## 安装pinia
 

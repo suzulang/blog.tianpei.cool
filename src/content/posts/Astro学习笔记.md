@@ -4,7 +4,6 @@ pubDate: 2024-04-02
 categories: ['Astro']
 description: '记录学习Astro的过程'
 ---
-## Astro学习笔记
 
 ### Astro.props标签属性值传递
 

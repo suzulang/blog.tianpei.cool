@@ -44,7 +44,7 @@ export function getPostDescription(post: Post) {
 
   const html = parser.render(post.body)
   const sanitized = sanitizeHtml(html, { allowedTags: [] })
-  return sanitized.slice(0, 400)
+  return sanitized.slice(0, 100)
 }
 
 export function formatDate(date?: Date) {
