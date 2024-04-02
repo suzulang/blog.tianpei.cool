@@ -10,7 +10,7 @@ export const THEME_CONFIG: App.Locals['config'] = {
   /** your locale */
   locale: "zh-cn",
   /** theme style */
-  themeStyle: "light",
+  themeStyle: "dark",
   /** your socials */
   socials: [
     {
@@ -48,6 +48,10 @@ export const THEME_CONFIG: App.Locals['config'] = {
       name: "About",
       href: "/about",
     },
+    {
+      name: "Friends",
+      href: "/friends"
+    }
   ],
   /** your category name mapping, which the `path` will be shown in the url */
   category_map: [
