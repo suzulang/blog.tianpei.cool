@@ -32,6 +32,6 @@ export default defineConfig({
       injectReset: true
     }),
     robotsTxt(),
-    sitemap()
+    sitemap(),
   ]
 });
