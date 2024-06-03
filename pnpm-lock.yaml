@@ -21,8 +21,8 @@ dependencies:
     specifier: ^1.0.0
     version: 1.0.0
   astro-seo:
-    specifier: ^0.8.0
-    version: 0.8.2(typescript@5.3.3)
+    specifier: ^0.8.4
+    version: 0.8.4(typescript@5.3.3)
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -1499,8 +1499,8 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /astro-seo@0.8.2(typescript@5.3.3):
-    resolution: {integrity: sha512-9hu+2y0QboOShFly9r+LcasfEOsWFhV5GKzsfnPG4kbNm9mqXuEP7YrUt7XrEA7rJOzC1DInOV+cIT+7zBasBQ==}
+  /astro-seo@0.8.4(typescript@5.3.3):
+    resolution: {integrity: sha512-Ou1vzQSXAxa0K8rtNtXNvSpYqOGEgMhh0immMxJeXmbVZac3UKCNWAoXWyOQDFYsZvBugCRSg0N1phBqPMVgCw==}
     dependencies:
       '@astrojs/check': 0.5.6(typescript@5.3.3)
     transitivePeerDependencies:
