@@ -1,24 +1,34 @@
 ---
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
-import Post from '~/components/Post.astro'
-import { getPosts, getPostDescription } from '~/utils'
-import Pagination from '~/components/Pagination.astro'
+import ListSection from '~/components/ListSection.astro'
+import ListItem from '~/components/ListItem.astro'
+import { getPosts, formatDate } from '~/utils'
 
-const posts = (await getPosts()).slice(0, 5)
+const posts = await getPosts()
+
+const postByYear = new Map<number, Post[]>()
+posts.forEach((post: Post) => {
+  const pubDate = post.data.pubDate ?? new Date()
+  const year = pubDate.getFullYear()
+  if (!postByYear.has(year)) {
+    postByYear.set(year, [])
+  }
+  postByYear.get(year)!.push(post)
+})
 
 const { translate: t } = Astro.locals
-
 ---
 
 <LayoutDefault>
-  <section contain-layout un-flex="~ col gap-7.5">
+  <div un-flex="~ col gap-4">
     {
-      posts.map((post) => (
-        <Post post={post}>
-          <p class="line-clamp-4">{getPostDescription(post)}</p>
-        </Post>
+      Array.from(postByYear.entries()).map(([year, posts]) => (
+        <ListSection title={year}>
+          {posts.map((post) => (
+            <ListItem title={post.data.title} href={`/posts/${post.slug}/`} description={formatDate(post.data.pubDate)} />
+          ))}
+        </ListSection>
       ))
     }
-    <Pagination showLeft={false} showPageCount={false} rightTitle={t('all_posts')} rightUrl={'posts/page/1'} />
-  </section>
+  </div>
 </LayoutDefault>
