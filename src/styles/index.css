@@ -80,3 +80,19 @@ article.heti a code:hover {
   color: #f9f2f4;
   background-color: #c7254e;
 }
+
+article.heti blockquote {
+  border-left: 4px solid #4CAF50; /* 绿色边框 */
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+  background-color: rgba(76, 175, 80, 0.1); /* 浅绿色背景 */
+  padding: 1em;
+  border-radius: 4px;
+  text-align: left;
+}
+
+article.heti blockquote p {
+  margin: 0;
+  text-align: left;
+}
