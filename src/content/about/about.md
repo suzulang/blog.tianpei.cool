@@ -12,7 +12,3 @@
 日语语境里经常有`現役時代`这个词，特别是体育选手，比如说`彼の現役時代は、数々の記録を打ち立てた伝説的な時期だった。`
 
 我认为，人生一直就在`現役時代`，不沉迷于过去的辉煌，也不憧憬未知的未来，过好当下。
-
-> Link: https://www.youtube.com/watch?v=oVgtOKzQUk8————一条采访视频
->
-> Link: https://youzhiyouxing.cn/materials/1129————在场上
