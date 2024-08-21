@@ -23,12 +23,12 @@ export const THEME_CONFIG: App.Locals['config'] = {
     },
     {
       name: "twitter",
-      href: "https://twitter.com/tianpeicool",
+      href: "https://twitter.com/geneki_kun",
     }
   ],
   /** your header info */
   header: {
-    twitter: "@tianpeicool",
+    twitter: "@geneki_kun",
   },
   /** your navigation links */
   navs: [
