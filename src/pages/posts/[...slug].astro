@@ -4,7 +4,6 @@ import LayoutDefault from '~/layouts/LayoutDefault.astro'
 import { getPosts } from '~/utils'
 import type { InferGetStaticPropsType, GetStaticPaths } from 'astro'
 import Pagination from '~/components/Pagination.astro'
-import PostComments from '~/components/PostComments.astro'
 export const getStaticPaths = (async ({}) => {
   const posts = await getPosts()
   return posts.map((post, idx) => {
@@ -33,7 +32,6 @@ const { translate: t} = Astro.locals
   <Post post={entry}>
     <Content />
   </Post>
-  <PostComments />
   <Pagination
       showLeft={Boolean(prev)}
       leftTitle={`${t('prev_post')}: ${prev?.data.title}`}
