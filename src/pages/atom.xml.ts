@@ -17,6 +17,12 @@ export async function GET(_context: APIContext) {
     title: title,
     description: desc,
     site: website,
+    customData: `
+      <follow_challenge>
+        <feedId>69900580664822784</feedId>
+        <userId>58768111003275264</userId>
+      </follow_challenge>
+    `,
     items: posts.map((post) => {
       return {
         link: `/posts/${post.slug}/`,
@@ -29,7 +35,8 @@ export async function GET(_context: APIContext) {
         categories: post.data.categories,
         commentsUrl: post.data.commentsUrl,
         source: post.data.source,
-        enclosure: post.data.enclosure,
+        enclosure: post.data.enclosure, 
+        
       }
     }),
     stylesheet: '/pretty-feed-v3.xsl',
