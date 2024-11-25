@@ -9,9 +9,9 @@ const { translate: t } = Astro.locals
 ---
 
 <article class="heti">
-  <header>
+  <header class="text-center">
     <h1 class="post-title!">
-      <a href={`/posts/${post.slug}/`}>{post.data.title}</a>
+      {post.data.title}
     </h1>
     <div class="mt-2 text-3.5">
       <span>{t('posted_at')}</span>
